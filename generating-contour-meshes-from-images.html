@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generating Contour Meshes from Images</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1, h2, h3 { margin-top: 1em; }
+    code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; }
+    pre { background: #f0f0f0; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Generating Contour Meshes from Images</h1>
+  <p>---<br>title: "Generating Contour Meshes from Images"<br>source<em>rel</em>html: "3D Modeling/Meshes/Generating Contour Meshes from Images.htm"<br>---<br><h1>Generating Contour Meshes from Images</h1><br><br>You can generate contour meshes that describe the contour around values in a dataset that are above the selected lower threshold. In the example below, a contour mesh was generated from a volumetric scan of a titanium implant in rabbit bone.<br><br>Contour mesh (on right) of a titanium implant in bone<br><br><img src="../../../<em>attachments/Resources/Images/3d-modeling/meshes/contour-mesh</em>_7fe012fa6c.png" alt="Contour mesh"><br><br>Contour meshes are also available for regions of interest (see [[Generating Contour Meshes from ROIs|Generating Contour Meshes from ROIs]]). When generated from this type of object, the contour will describe the labeled voxels contained within the region of interest.<br><br>The settings for generating contour meshes are available in the Generate Contour Mesh dialog, shown below. Right-click the required volumetric dataset in the Data Properties and Settings panel and then choose <strong>Generate Contour Mesh</strong> to access the panel.<br><br>Generate Contour Mesh panel<br><br><img src="../../../<em>attachments/Resources/Images/3d-modeling/meshes/contour-mesh-panel</em>_32c9ff238f.png" alt="Generate Contour Mesh panel"><br><br>The following options are available for generating contour meshes.<br><br>\<em>\</em>TABLE\<em>TOKEN\</em>1\<em>\</em><br><br>Thresholding may not be suitable for noisy data. Random noise in the background with voxel values above the threshold will also be displayed and may obscure features of interest.<br><br><h2>How to Generate a Contour Mesh from an Image</h2><br><br>1. Right-click the required dataset in the Data Properties and Settings panel and then choose <strong>Generate Contour Mesh</strong> in the pop-up menu.<br><br>   The Generate Contour Mesh panel appears on the Dataset Tools tab.<br>2. Do one of the following:<br>   - Enter a threshold value in the Threshold edit box.<br>   - Select a threshold value with the slider.<br>   - Check the <strong>Use Otsu</strong> option.<br>3. Select a sampling rate and algorithm, which determines how surfaces are tessellated or broken down logically into a series of small triangles or facets.<br><br>   Each voxel value is analyzed when sampling value is set at 1. Setting the sampling rate at a higher value will produce results faster, but at a lower quality.<br>4. Click the <strong>Export to a Mesh</strong> button.<br><br>   The generated mesh is added to the Data Properties and Settings panel (see [[Mesh Properties and Settings|Mesh Properties and Settings]] for information about making a mesh visible in a scene and about the settings available in the lower section of the panel.<br>5. Generate additional contour meshes, if required.<br><br>   You can select different threshold values for the currently selected object, or choose to work with another object.<br>6. Click the <strong>Close</strong> button to close the Generate Contour mesh panel.<br></p>
+  <hr>
+  <small>Published from Obsidian via GitHub Pages Publisher</small>
+</body>
+</html>

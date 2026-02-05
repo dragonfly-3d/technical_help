@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plotting Graph Tortuosity</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1, h2, h3 { margin-top: 1em; }
+    code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; }
+    pre { background: #f0f0f0; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Plotting Graph Tortuosity</h1>
+  <p>---<br>title: "Plotting Graph Tortuosity"<br>source<em>rel</em>html: "3D Modeling/Graphs/Plotting Graph Tortuosity.htm"<br>---<br><h1>Plotting Graph Tortuosity</h1><br><br>One of the quantities of interest in the flow through porous media is not the properties of the matrix, but rather the properties of the corresponding pore space. In particular, there may be narrow passages called pore throats separated by wider, winding passages. Reduced pore throats and increased tortuosity often result in increased capillary pressure and a reduction in permeability.<br><br>For analysis purposes, you can plot the distribution of graph tortuosity and throat-weighted tortuosity between input and output boxes. Tortuosity is a measure of the departure of a pore space from an ideal system made of straight and parallel capillaries and can be defined as the ratio of actual path length to the straight distance between the ends of the path. Throat-weighted tortuosity, which measures '<em>effective</em>' tortuosity, considers both path length and the '<em>difficultly</em>' of traversing different parts of the path based on the size of the cross-sectional areas within the passage.<br><br>Histograms of tortuosity and throat-weighted tortuosity<br><br>!<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/tortuosity-histograms</em>_8d70c1b126.png "Click to enlarge."">Histograms of tortuosity</a><br><br>The tools at the top of the Histogram dialog let you to pan, zoom, and reset the histogram, as well as save the figure, adjust the figure, and export the histogram data to a comma-separated values file (\*.csv extension).<br><br>\<em>\</em>TABLE\<em>TOKEN\</em>1\<em>\</em><br><br><h2>How to Plot Graph Tortuosity</h2><br><br>1. Add box shapes to define the input and output of the segment of the graph that you want to plot (see [[Adding and Editing Shapes|Adding and Editing Shapes]]).<br><br>   You can adjust the input and output boxes on the 3D view showing the graph or to the 2D views of the original region of interest, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-boxes</em>_ca16525c3b.png "Click to enlarge.""></a><br>2. Right-click the graph in the Data Properties and Settings panel and then choose <strong>Plot Graph Tortuosity</strong> in the pop-up menu.<br>3. Choose the input and output boxes, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/tortuosity-choose-input-output</em>_c39f69c647.png"></a><br>4. Click <strong>OK</strong> to plot the tortuosity within the selected segment of the graph.<br><br><h2>How to Plot Graph Throat-Weighted Tortuosity</h2><br><br>1. Add box shapes that define the input and output of the segment of the graph that you want to plot (see [[Adding and Editing Shapes|Adding and Editing Shapes]]).<br><br>   You can add the input and output boxes to the 3D view showing the graph or to the 2D views of the original region of interest, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-boxes</em>_ca16525c3b.png "Click to enlarge.""></a><br>2. Right-click the graph in the Data Properties and Settings panel and then choose <strong>Plot Graph Throat-Weighted Tortuosity</strong> in the pop-up menu.<br>3. Choose the region of interest that will be used to derive the cross-sectional areas for computing throat-weighted tortuosity, as well as the input and output boxes, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/throat-weighted-tortuosity-choose</em>_d53af079f5.png"></a><br><br>   <strong>Note</strong> Cross-sectional areas for computing throat-weighted tortuosity are derived from a distance map that is the invert of the input ROI.<br>4. Click <strong>OK</strong> to plot the tortuosity within the selected segment of the graph.<br></p>
+  <hr>
+  <small>Published from Obsidian via GitHub Pages Publisher</small>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyzing Graph Tortuosity</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1, h2, h3 { margin-top: 1em; }
+    code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; }
+    pre { background: #f0f0f0; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Analyzing Graph Tortuosity</h1>
+  <p>---<br>title: "Analyzing Graph Tortuosity"<br>source<em>rel</em>html: "3D Modeling/Graphs/Analyzing Graph Tortuosity.htm"<br>---<br><h1>Analyzing Graph Tortuosity</h1><br><br>For graphs of porous media, you can analyze graph tortuosity and throat-weighted tortuosity between selected input and output boxes. You should note that tortuosity is a measure of the departure of a pore space from an ideal system made of straight and parallel capillaries and can be defined as the ratio of actual path length to the straight distance between the ends of the path. Throat-weighted tortuosity, which measures '<em>effective</em>' tortuosity, considers both path length and the '<em>difficultly</em>' of traversing different parts of the path based on the size of the cross-sectional areas within the passage.<br><br>Tortuosity analysis and throat-weighted analysis results — Mean, Min, Max, and STD — appear as shown below.<br><br>Tortuosity analysis results (left) and throat-weighted tortuosity analysis results (right)<br><br>!<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-analysis-results</em>_841e742420.png">Tortuosity analysis results</a><br><br><h2>How to Analyze Graph Tortuosity</h2><br><br>1. Add box shapes to define the input and output of the segment of the graph that you want to analyze (see [[Adding and Editing Shapes|Adding and Editing Shapes]]).<br><br>   You can adjust the input and output boxes on the 3D view showing the graph or to the 2D views of the original region of interest, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-boxes</em>_ca16525c3b.png "Click to enlarge.""></a><br>2. Right-click the required graph in the Data Properties and Settings panel and then choose <strong>Analyze Graph Tortuosity</strong> in the pop-up menu.<br>3. Choose the required input and output boxes, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-sparse-graph-choose</em>_625efe4ca6.png"></a><br>4. Click <strong>OK</strong> to compute tortuosity measurements within the selected segment.<br><br><h2>How to Analyze Graph Throat-Weighted Tortuosity</h2><br><br>1. Add box shapes to define the input and output of the segment of the graph that you want to analyze (see [[Adding and Editing Shapes|Adding and Editing Shapes]]).<br><br>   You can adjust the input and output boxes on the 3D view showing the graph or to the 2D views of the original region of interest, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-tortuosity-boxes</em>_ca16525c3b.png "Click to enlarge.""></a><br>2. Right-click the required graph in the Data Properties and Settings panel and then choose <strong>Analyze Graph Throat Weighted Tortuosity</strong> in the pop-up menu.<br>3. Choose the region of interest that will be used to derive the cross-sectional areas for computing throat-weighted tortuosity, as well as the input and output boxes, as shown below.<br><br>   !<a href="../../../<em>attachments/Resources/Images/3d-modeling/graphs/graph-throat-weighted-tortuosity-choose</em>_64b97fbd42.png"></a><br><br>   <strong>Note</strong> Cross-sectional areas for computing throat-weighted tortuosity are derived from a distance map that is the invert of the input ROI.<br>4. Click <strong>OK</strong> to compute throat-weighted tortuosity measurements within the selected segment.<br></p>
+  <hr>
+  <small>Published from Obsidian via GitHub Pages Publisher</small>
+</body>
+</html>
